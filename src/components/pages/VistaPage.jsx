@@ -22,11 +22,31 @@ export default function VistaPage() {
                             <img src="./img/broaster.jpg" alt="" />
                         </div>
                         <div>
-                            <h2>RestoBar</h2>
+                            <h2>Carpintería/Muebles</h2>
                             <img src="./img/cocteles.jpg" alt="" />
                         </div>
                         <div>
-                            <h2>Vestimenta</h2>
+                            <h2>Vestimenta/Moda</h2>
+                            <img src="./img/vestimenta.jpg" alt="" />
+                        </div>
+                        <div>
+                            <h2>Tecnologia</h2>
+                            <img src="./img/vestimenta.jpg" alt="" />
+                        </div>
+                        <div>
+                            <h2>Entretenimiento</h2>
+                            <img src="./img/vestimenta.jpg" alt="" />
+                        </div>
+                        <div>
+                            <h2>Salud/Bienestar</h2>
+                            <img src="./img/vestimenta.jpg" alt="" />
+                        </div>
+                        <div>
+                            <h2>Movilistico</h2>
+                            <img src="./img/vestimenta.jpg" alt="" />
+                        </div>
+                        <div>
+                            <h2>Ferreteria</h2>
                             <img src="./img/vestimenta.jpg" alt="" />
                         </div>
                     </div>
