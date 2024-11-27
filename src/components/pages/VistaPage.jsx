@@ -1,10 +1,19 @@
 import React from 'react'
 import './VistaPage.css'
-import { ImStarFull } from "react-icons/im";
+import { useNavigate } from 'react-router-dom';
 import { Descuento } from '../HomeD/Descuento'
 import { Informacion } from '../HomeD/Informacion';
 
 export default function VistaPage() {
+
+    const navigate = useNavigate();
+
+    const handleClick = () =>{
+        navigate('/restaurantes')
+    }
+
+
+
     return (
         <div className='principalVista'>
             <div className='contenedorVista'>
@@ -17,10 +26,15 @@ export default function VistaPage() {
                 </div>
                 <div className='categorias'>
                     <button>Categorias</button>
+                    <h2>Para más información haz click sobre la imagen</h2>
                     <div id='todas'>
                         <div>
                             <h2>Restaurantes</h2>
-                            <img src="./img/broaster.jpg" alt="" />
+                            <img 
+                            src="./img/broaster.jpg" 
+                            alt="" 
+                            onClick={handleClick}
+                            />
                         </div>
                         <div>
                             <h2>Carpintería/Muebles</h2>

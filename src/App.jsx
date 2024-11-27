@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import VistaPage from './components/pages/VistaPage';
+import RestaurantesPage from './components/pages/RestaurantesPage';
+import NativePage from './components/pages/NativePage';
 import { Navbar } from './components/Navar/Navbar';
+
 
 function App() {
   const [showVideo, setShowVideo] = useState(true); // Estado para controlar el video
@@ -36,6 +39,8 @@ function Main() {
       <Navbar />
       <Routes>
         <Route path="/" element={<VistaPage />} />
+        <Route path="/restaurantes" element={<RestaurantesPage />} />
+        <Route path="/native/products" element={<NativePage />} />
       </Routes>
     </>
   );

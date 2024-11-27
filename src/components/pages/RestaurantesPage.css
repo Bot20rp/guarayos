@@ -1,0 +1,32 @@
+.restaurante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.restaurante #resto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.restaurante #resto img{
+    flex: 1; /* Esto hará que las imágenes ocupen el mismo espacio de manera flexible */
+    width: 100%; /* Las imágenes ocuparán el ancho completo del contenedor */
+    height: 200px; /* Altura fija para dispositivos móviles */
+    object-fit: cover; /* Recorta la imagen manteniendo las proporciones */
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}

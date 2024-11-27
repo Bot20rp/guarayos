@@ -65,16 +65,25 @@
     display: flex;
     margin-top: 10px;
     flex-direction: column;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
     gap: 20px;
     justify-content: center;
 }
 .categorias button{
-    background: #fdfdfd;
+    background: #0037ff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width:150px;
     height: 50px;
     border: 0;
+    color: #fdfdfd;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.categorias button:hover{
+  background-color: #00ff08;
 }
 
 .categorias #todas{
@@ -99,6 +108,13 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
+    cursor: pointer;
+  }
+
+.categorias #todas  img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    cursor: pointer; /* Puntero sigue visible */
   }
 
 /* VistaPage.css */
