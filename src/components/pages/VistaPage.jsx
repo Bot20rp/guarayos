@@ -2,6 +2,7 @@ import React from 'react'
 import './VistaPage.css'
 import { ImStarFull } from "react-icons/im";
 import { Descuento } from '../HomeD/Descuento'
+import { Informacion } from '../HomeD/Informacion';
 
 export default function VistaPage() {
     return (
@@ -50,6 +51,9 @@ export default function VistaPage() {
                             <img src="./img/ferreteria.jpg" alt="" />
                         </div>
                     </div>
+                </div>
+                <div>
+                    <Informacion/>
                 </div>
             </div>
 
