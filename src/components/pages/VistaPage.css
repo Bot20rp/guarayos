@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.principalVista {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorVista {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo,
+.titulo h1 {
+  display: flex;
+  font-family: 'Lobster', sans-serif; /* Cambié la fuente a Lobster */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 70px;
+  animation: slideIn 2s ease-out infinite alternate;
+  background: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: -2px;
+  text-align: center;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideIn {
+  0% {
+    transform: translateX(20px); /* Inicialmente a la izquierda */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Se desliza hacia su posición final */
+    opacity: 1;
+  }
+}
+
+.titulo #guarayos {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease-in-out;
+}
+
+
+/* Hover effect para cambiar colores */
+.titulo:hover #guarayos {
+  color: rgb(217, 255, 0);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .titulo h1 {
+    font-size: 20px; /* Tamaño más pequeño para pantallas pequeñas */
+  }
+}
+
+
+
+.categorias{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.categorias button{
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 50px;
+    border: 0;
+}
+
+.categorias #todas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.categorias #todas img {
+    flex: 1; /* Esto hará que las imágenes ocupen el mismo espacio de manera flexible */
+    width: 100%; /* Las imágenes ocuparán el ancho completo del contenedor */
+    height: 200px; /* Altura fija para dispositivos móviles */
+    object-fit: cover; /* Recorta la imagen manteniendo las proporciones */
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+/* VistaPage.css */
+.descuento {
+  display: flex; /* Activamos Flexbox */
+  justify-content: center; /* Centra las imágenes dentro del contenedor */
+  align-items: center; /* Centra las imágenes verticalmente */
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+}
+
+.descuento img {
+  flex: 1; /* Esto hará que las imágenes ocupen el mismo espacio de manera flexible */
+  width: 100%; /* Las imágenes ocuparán el ancho completo del contenedor */
+  height: 200px; /* Altura fija para dispositivos móviles */
+  object-fit: cover; /* Recorta la imagen manteniendo las proporciones */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query para pantallas más grandes (como PC) */
+@media (min-width: 768px) {
+  .descuento img {
+    height: 400px; /* Aumentamos la altura para pantallas más grandes */
+  }
+}
+
+/* Media query para pantallas de escritorio muy grandes */
+@media (min-width: 1200px) {
+  .descuento img {
+    height: 500px; /* Ajusta aún más la altura para pantallas grandes */
+  }
+}
+
+  
