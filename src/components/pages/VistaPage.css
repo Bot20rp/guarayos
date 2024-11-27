@@ -32,7 +32,7 @@
 /* Animación de deslizamiento */
 @keyframes slideIn {
   0% {
-    transform: translateX(20px); /* Inicialmente a la izquierda */
+    transform: translateX(0); /* Inicialmente a la izquierda */
     opacity: 0;
   }
   100% {
