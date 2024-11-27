@@ -61,7 +61,7 @@ const NativePage = () => {
                         <h2>Especial</h2>
                         <img src="../img/native7.jpg" alt="" />
                         <h3>Precio: 15bs </h3>
-                        <button onClick={handlePedir('Especial',15)}>Pedir</button>
+                        <button onClick={() => handlePedir('Especial',15)}>Pedir</button>
                     </div>
                 </div>
             </div>
