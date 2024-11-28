@@ -22,7 +22,7 @@ function App() {
         <div className='contenedor'>
           <div className="video-container">
             <video autoPlay muted onEnded={() => setShowVideo(false)} style={{ width: '100%' }}>
-              <source src="./video/Guarayos.mp4" type="video/mp4" />
+              <source src="/video/Guarayos.mp4" type="video/mp4" />
             </video>
           </div>
         </div>

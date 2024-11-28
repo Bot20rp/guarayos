@@ -23,7 +23,7 @@ const RestaurantesPage = () => {
                         <div>
                             <h2>NATIVE</h2>
                             <img 
-                            src="./img/native.jpg" 
+                            src="/img/native.jpg" 
                             alt="" 
                             onClick={handleClick}
                             />
